@@ -21,7 +21,7 @@ if "messages" not in st.session_state:
 def create_prompt():
     return ChatPromptTemplate.from_messages(st.session_state.messages)
 
-st.title('Langchain Demo with OPENAI API')
+st.title('ChatBot Using Llama 3.1')
 input_text = st.text_input("Search the topic you want")
 
 llm = Ollama(model="llama3.1")
